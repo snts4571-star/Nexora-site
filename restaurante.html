@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sabor & Cia</title>
+
+    <link rel="stylesheet" href="restaurante.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a href="#inicio" class="logo">
+            SABOR<span>&CIA</span>
+        </a>
+
+        <nav class="nav">
+            <a href="#inicio">Início</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <a href="#cardapio" class="header-button">
+            Pedir agora
+        </a>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <span class="tag">
+                    RESTAURANTE • SABOR • EXPERIÊNCIA
+                </span>
+
+                <h1>
+                    O sabor que
+                    <span>fica na memória.</span>
+                </h1>
+
+                <p>
+                    Pratos preparados com ingredientes selecionados,
+                    receitas especiais e muito sabor em cada detalhe.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#cardapio" class="primary-button">
+                        Ver cardápio
+                        <span>↓</span>
+                    </a>
+
+                    <a href="#sobre" class="secondary-button">
+                        Conheça nossa história
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-card">
+
+                <div class="food-circle">
+                    🍔
+                </div>
+
+                <span>ESPECIAL DA CASA</span>
+
+                <h2>
+                    Smash<br>
+                    Especial
+                </h2>
+
+                <p>
+                    Hambúrguer artesanal com ingredientes
+                    selecionados.
+                </p>
+
+                <strong>
+                    R$ 24,90
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- CARDÁPIO -->
+
+        <section class="menu-section" id="cardapio">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="tag">
+                        NOSSO CARDÁPIO
+                    </span>
+
+                    <h2>
+                        Favoritos da casa
+                    </h2>
+                </div>
+
+                <p>
+                    Uma seleção dos pratos mais pedidos
+                    pelos nossos clientes.
+                </p>
+
+            </div>
+
+
+            <div class="food-grid">
+
+                <article class="food-card">
+
+                    <div class="food-icon">
+                        🍔
+                    </div>
+
+                    <span class="food-category">
+                        HAMBÚRGUER
+                    </span>
+
+                    <h3>
+                        Smash Especial
+                    </h3>
+
+                    <p>
+                        Hambúrguer artesanal, queijo,
+                        molho especial e ingredientes frescos.
+                    </p>
+
+                    <div class="food-footer">
+
+                        <strong>
+                            R$ 24,90
+                        </strong>
+
+                        <button onclick="pedir('Smash Especial')">
+                            +
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="food-card">
+
+                    <div class="food-icon">
+                        🍕
+                    </div>
+
+                    <span class="food-category">
+                        PIZZA
+                    </span>
+
+                    <h3>
+                        Pizza da Casa
+                    </h3>
+
+                    <p>
+                        Massa artesanal, molho especial
+                        e muito queijo.
+                    </p>
+
+                    <div class="food-footer">
+
+                        <strong>
+                            R$ 39,90
+                        </strong>
+
+                        <button onclick="pedir('Pizza da Casa')">
+                            +
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="food-card">
+
+                    <div class="food-icon">
+                        🍝
+                    </div>
+
+                    <span class="food-category">
+                        MASSAS
+                    </span>
+
+                    <h3>
+                        Massa Cremosa
+                    </h3>
+
+                    <p>
+                        Massa preparada na hora com
+                        molho cremoso e temperos especiais.
+                    </p>
+
+                    <div class="food-footer">
+
+                        <strong>
+                            R$ 29,90
+                        </strong>
+
+                        <button onclick="pedir('Massa Cremosa')">
+                            +
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+
+        <section class="about-section" id="sobre">
+
+            <div class="about-number">
+                01
+            </div>
+
+            <div class="about-content">
+
+                <span class="tag">
+                    NOSSA HISTÓRIA
+                </span>
+
+                <h2>
+                    Mais que uma refeição.
+                    <span>Uma experiência.</span>
+                </h2>
+
+                <p>
+                    O Sabor & Cia nasceu com uma ideia simples:
+                    transformar uma refeição comum em um momento
+                    especial.
+                </p>
+
+                <p>
+                    Cada prato é preparado com cuidado para
+                    entregar qualidade, sabor e uma experiência
+                    que nossos clientes querem repetir.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTATO -->
+
+        <section class="contact-section" id="contato">
+
+            <span class="tag">
+                FAÇA SEU PEDIDO
+            </span>
+
+            <h2>
+                Deu fome?
+            </h2>
+
+            <p>
+                Escolha seu prato e fale com a gente.
+            </p>
+
+            <button
+                class="primary-button"
+                onclick="pedir('pedido')">
+
+                Pedir pelo WhatsApp ↗
+
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="logo">
+            SABOR<span>&CIA</span>
+        </div>
+
+        <p>
+            Sabor que fica na memória.
+        </p>
+
+        <small>
+            © 2026 Sabor & Cia — Todos os direitos reservados.
+        </small>
+
+    </footer>
+
+
+    <script>
+
+        function pedir(produto) {
+
+            const numero = "5571999999999";
+
+            const mensagem =
+                "Olá! Gostaria de fazer um pedido no Sabor & Cia.%0A%0A" +
+                "Produto: " + produto;
+
+            window.open(
+                "https://wa.me/" +
+                numero +
+                "?text=" +
+                mensagem,
+                "_blank"
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

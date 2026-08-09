@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Black Crown Barber</title>
+
+    <link rel="stylesheet" href="barbearia.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a href="#inicio" class="logo">
+            BLACK<span>CROWN</span>
+        </a>
+
+        <nav class="desktop-menu">
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#sobre">A Barbearia</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <a href="#agendamento" class="schedule-button">
+                Agendar horário
+            </a>
+
+            <button class="menu-mobile" onclick="abrirMenu()">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- MENU MOBILE -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#inicio" onclick="fecharMenu()">
+            Início
+        </a>
+
+        <a href="#servicos" onclick="fecharMenu()">
+            Serviços
+        </a>
+
+        <a href="#sobre" onclick="fecharMenu()">
+            A Barbearia
+        </a>
+
+        <a href="#contato" onclick="fecharMenu()">
+            Contato
+        </a>
+
+    </div>
+
+
+    <!-- HERO -->
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    BARBEARIA PREMIUM
+                </span>
+
+                <h1>
+                    Seu estilo.
+                    <br>
+                    Sua <span>marca.</span>
+                </h1>
+
+                <p>
+                    Cortes precisos, atendimento exclusivo
+                    e uma experiência criada para quem não
+                    abre mão de estilo.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#agendamento" class="primary-button">
+                        Agendar agora
+                    </a>
+
+                    <a href="#servicos" class="outline-button">
+                        Ver serviços
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-side">
+
+                <div class="vertical-text">
+                    EST. 2018
+                </div>
+
+                <div class="hero-circle">
+
+                    <div>
+                        <span>BC</span>
+                        <small>BARBER</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- NÚMEROS -->
+
+        <section class="numbers">
+
+            <div>
+                <strong>08</strong>
+                <span>ANOS DE EXPERIÊNCIA</span>
+            </div>
+
+            <div>
+                <strong>12K+</strong>
+                <span>CORTES REALIZADOS</span>
+            </div>
+
+            <div>
+                <strong>4.9</strong>
+                <span>AVALIAÇÃO MÉDIA</span>
+            </div>
+
+        </section>
+
+
+        <!-- SERVIÇOS -->
+
+        <section class="services" id="servicos">
+
+            <div class="section-top">
+
+                <div>
+
+                    <span class="eyebrow">
+                        O QUE FAZEMOS
+                    </span>
+
+                    <h2>
+                        Serviços
+                    </h2>
+
+                </div>
+
+                <p>
+                    Escolha o serviço ideal para renovar
+                    seu visual.
+                </p>
+
+            </div>
+
+
+            <div class="services-list">
+
+                <article class="service">
+
+                    <span class="service-number">01</span>
+
+                    <div>
+                        <h3>Corte Premium</h3>
+
+                        <p>
+                            Corte personalizado de acordo
+                            com seu estilo.
+                        </p>
+                    </div>
+
+                    <strong>R$ 45</strong>
+
+                </article>
+
+
+                <article class="service">
+
+                    <span class="service-number">02</span>
+
+                    <div>
+                        <h3>Barba</h3>
+
+                        <p>
+                            Modelagem, acabamento e toalha
+                            quente para finalizar.
+                        </p>
+                    </div>
+
+                    <strong>R$ 30</strong>
+
+                </article>
+
+
+                <article class="service">
+
+                    <span class="service-number">03</span>
+
+                    <div>
+                        <h3>Corte + Barba</h3>
+
+                        <p>
+                            A combinação completa para deixar
+                            o visual em dia.
+                        </p>
+                    </div>
+
+                    <strong>R$ 65</strong>
+
+                </article>
+
+
+                <article class="service">
+
+                    <span class="service-number">04</span>
+
+                    <div>
+                        <h3>Acabamento</h3>
+
+                        <p>
+                            Ajuste rápido para manter seu
+                            corte sempre impecável.
+                        </p>
+                    </div>
+
+                    <strong>R$ 20</strong>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+
+        <section class="about" id="sobre">
+
+            <div class="about-label">
+                01 / SOBRE
+            </div>
+
+            <div class="about-content">
+
+                <span class="eyebrow">
+                    BLACK CROWN
+                </span>
+
+                <h2>
+                    Não é apenas um corte.
+                    <span>É presença.</span>
+                </h2>
+
+                <p>
+                    Criamos um ambiente onde técnica,
+                    personalidade e atendimento se encontram.
+                    Cada detalhe foi pensado para transformar
+                    seu horário na cadeira em uma experiência.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- AGENDAMENTO -->
+
+        <section class="booking" id="agendamento">
+
+            <div class="booking-box">
+
+                <div class="booking-text">
+
+                    <span class="eyebrow">
+                        AGENDE SEU HORÁRIO
+                    </span>
+
+                    <h2>
+                        Seu próximo
+                        visual começa aqui.
+                    </h2>
+
+                    <p>
+                        Escolha seu serviço e entre em contato
+                        para reservar seu horário.
+                    </p>
+
+                </div>
+
+
+                <div class="booking-form">
+
+                    <label>Seu nome</label>
+
+                    <input
+                        id="clientName"
+                        type="text"
+                        placeholder="Digite seu nome"
+                    >
+
+
+                    <label>Serviço</label>
+
+                    <select id="service">
+
+                        <option value="Corte Premium">
+                            Corte Premium
+                        </option>
+
+                        <option value="Barba">
+                            Barba
+                        </option>
+
+                        <option value="Corte + Barba">
+                            Corte + Barba
+                        </option>
+
+                        <option value="Acabamento">
+                            Acabamento
+                        </option>
+
+                    </select>
+
+
+                    <button
+                        onclick="agendar()"
+                        class="booking-button">
+
+                        Solicitar horário →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTATO -->
+
+        <section class="contact" id="contato">
+
+            <span class="eyebrow">
+                BLACK CROWN BARBER
+            </span>
+
+            <h2>
+                Pronto para
+                mudar o visual?
+            </h2>
+
+            <p>
+                Entre em contato e agende seu horário.
+            </p>
+
+            <button
+                onclick="agendar()"
+                class="primary-button">
+
+                Agendar pelo WhatsApp
+
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="logo">
+            BLACK<span>CROWN</span>
+        </div>
+
+        <p>
+            Estilo, precisão e presença.
+        </p>
+
+        <small>
+            © 2026 Black Crown Barber.
+        </small>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function abrirMenu() {
+
+            const menu =
+                document.getElementById("mobileMenu");
+
+            menu.classList.toggle("ativo");
+
+        }
+
+
+        function fecharMenu() {
+
+            const menu =
+                document.getElementById("mobileMenu");
+
+            menu.classList.remove("ativo");
+
+        }
+
+
+        function agendar() {
+
+            const nome =
+                document.getElementById("clientName")?.value
+                || "Olá";
+
+
+            const servico =
+                document.getElementById("service")?.value
+                || "Gostaria de agendar um horário";
+
+
+            const numero = "5571999999999";
+
+
+            const mensagem =
+                "Olá, Black Crown Barber!%0A%0A" +
+                "Nome: " + nome + "%0A" +
+                "Serviço: " + servico + "%0A%0A" +
+                "Gostaria de agendar um horário.";
+
+
+            window.open(
+                "https://wa.me/" +
+                numero +
+                "?text=" +
+                mensagem,
+                "_blank"
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>
