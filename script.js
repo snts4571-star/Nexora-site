@@ -147,58 +147,40 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // WHATSAPP
+// DISCORD
 
-    const sendRequest =
-        document.getElementById("sendRequest");
+const sendRequest =
+    document.getElementById("sendRequest");
 
+if (sendRequest) {
 
-    if (sendRequest) {
+    sendRequest.addEventListener("click", () => {
 
-        sendRequest.addEventListener("click", () => {
+        const name =
+            document.getElementById("clientName")?.value.trim();
 
-            const name =
-                document.getElementById("clientName")?.value.trim();
+        const company =
+            document.getElementById("companyName")?.value.trim();
 
-            const company =
-                document.getElementById("companyName")?.value.trim();
+        if (!name || !company) {
 
-            const site =
-                modalTitle?.textContent || "Site";
-
-
-            if (!name || !company) {
-
-                alert(
-                    "Preencha seu nome e o nome da empresa."
-                );
-
-                return;
-
-            }
-
-
-            // COLOQUE SEU NÚMERO AQUI
-            const phone = "5571999999999";
-
-
-            const message =
-                `Olá, Nexora!%0A%0A` +
-                `Gostaria de solicitar um site.%0A%0A` +
-                `Modelo: ${site}%0A` +
-                `Nome: ${name}%0A` +
-                `Empresa: ${company}`;
-
-
-            window.open(
-                `https://wa.me/${phone}?text=${message}`,
-                "_blank"
+            alert(
+                "Preencha seu nome e o nome da empresa."
             );
 
-        });
+            return;
+        }
 
-    }
+        window.open(
+            "https://discord.gg/8YUbR3EG3",
+            "_blank"
+        );
 
+    });
+
+}
+
+            
 
     // ANIMAÇÃO DOS CARDS
 
